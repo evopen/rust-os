@@ -7,6 +7,9 @@ edition = "2021"
 
 [dependencies]
 bootloader = "0.9.8"
+volatile = "0.3"
+spin = "0.9.3"
+lazy_static = { version = "1.4", features = ["spin_no_std"] }
 
 [profile.dev]
 panic = "abort"
